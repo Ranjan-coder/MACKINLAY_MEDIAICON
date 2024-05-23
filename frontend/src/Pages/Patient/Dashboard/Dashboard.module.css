@@ -1,0 +1,8 @@
+.backgroundcolour{
+    background: linear-gradient(499deg, #d3e3fc, #c6dafe, #a3a8f8);
+    background: linear-gradient(499deg, #9398f7, #e6b2f8, #cc84fb);
+    /* background-color: #B6C9EB; */
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}

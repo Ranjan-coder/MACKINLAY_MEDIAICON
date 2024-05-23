@@ -1,9 +1,10 @@
 import './App.css';
+import Dashboard from './Pages/Patient/Dashboard/Dashboard';
 
 function App() {
   return (
     <>
-    <div>medi ai</div>
+    <Dashboard/>
     </>
   );
 }
