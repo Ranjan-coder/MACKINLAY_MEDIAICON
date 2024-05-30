@@ -1,11 +1,13 @@
-import './App.css';
+import React from 'react';
+import Layout from './component/Layout';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import './App.css'; 
 
-function App() {
+const App = () => {
   return (
-    <>
-    <div>medi ai</div>
-    </>
+        <Layout/>
+      
   );
-}
+};
 
 export default App;

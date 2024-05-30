@@ -1,0 +1,135 @@
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  
+  .header {
+    height: 10vh;
+    background-color: rgb(251, 220, 251);
+    display: flex;
+    font-size: 5vh;
+  
+  }
+  
+  .content-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+  }
+  
+  .side-menu {
+    width: 300px;
+    background-color: rgb(249, 223, 249);
+    box-shadow: 0 0 2px black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  
+  .footer {
+    height: 10vh;
+    background-color: rgb(250, 211, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 2px black;
+  }
+  
+  .button {
+    background-color: rgb(250, 211, 250);
+  }
+  
+  .text-light {
+    color: #ffffff;
+    background-color: rgb(144, 1, 180);
+    min-width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .ant-input {
+    width: 70%;
+  }
+  
+  .ant-form-item-label {
+    width: 100%;
+  }
+  
+  .schedule-container {
+    margin-top: 20px;
+  }
+  
+  .ant-picker, .ant-picker-range {
+    width: 100%;
+  }
+  
+  .text-info {
+    color: #ffffff;
+    background-color: rgb(144, 1, 180);
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 10vh;
+  }
+  
+  .custom-button {
+    color: #ffffff;
+    background-color: rgb(249, 213, 249);
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column;
+    }
+  
+    .side-menu {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .main-content {
+      margin-left: 0;
+    }
+  
+    .text-light, .text-info, .custom-button {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header, .footer {
+      height: auto;
+      padding: 10px;
+      font-size: 20px;
+    }
+  
+    .text-light, .text-info, .custom-button {
+      width: 100%;
+      padding: 8px;
+      font-size: 12px;
+    }
+  }
+  
