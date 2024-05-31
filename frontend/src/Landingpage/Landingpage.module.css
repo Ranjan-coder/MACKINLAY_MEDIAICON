@@ -1,0 +1,202 @@
+body{
+    background: linear-gradient(150deg, #e5ecf7, #AACFEF);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.main_header{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7bc0fd;
+    position: sticky;
+    top: 0;
+    box-shadow: 1px 1px 9px rgb(156, 156, 240);
+    transition: all 1s;
+
+}
+/* .sectionone{
+    background: linear-gradient(150deg, #e5ecf7, #AACFEF);
+} */
+.btm_lgsg{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.main_logo{
+    width: 200px;
+    text-align: center;
+}
+.textheading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(4, 4, 74);
+    height: 100px;
+}
+.imgcntnr{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.doctorimg{
+    height: 300px;
+    /* width: 300px; */
+    border-radius: 9px;
+}
+.contentbox_parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 19vh;
+}
+.smallboxcontent{
+    display: flex;
+    gap: 30px;
+}
+.landingcontent_box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.smallboxchild{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    border-radius: 15px;
+    height: 50px;
+    width: 170px;
+}
+.smallboxchild:hover{
+    background-color: #f1e1cb;
+    transition: background-color 1s;
+}
+
+.landing_textparagraph{
+    font-size: 18px;
+    color: aliceblue;
+    text-align: center;
+}
+.landing_parentcategory{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 20px 0px;
+    align-items: center;
+}
+.landing_categorybox{
+    height: 80px;
+    width: 110px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.landing_categorybox:hover{
+    background-color: #f1e1cb;
+    transition: all 1s;
+    scale: 1.2;
+}
+.landing_smallcard{
+    height: 50px;
+}
+.landing_smallcardtext{
+    font-size: small;
+}
+.landing_parentsmallcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.landing_sectionthree{
+    background-color: aliceblue;
+}
+.landing_carddetails{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 800px;
+    height: 250px;
+    gap: 100px;
+    /* background-color: #efa0a0; */
+}
+.landing_cardtextbox{
+    /* width: 500px; */
+}
+.landing_cardtext{
+    font-size: larger;
+    color: rgb(4, 4, 74);;
+}
+.landing_cardtextpgr{
+    color: rgb(105, 180, 245);
+    /* color: rgb(91, 133, 218); */
+    margin: 20px 0px;
+}
+.landing_cardappbtm{
+    width: 150px;
+}
+.landing_cardimgparent{
+    /* display: flex; */
+    /* height: 250px;   */
+}
+.landing_dctrptnt{
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 1px rgb(185, 217, 238);
+}
+.arvrbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+.textarvr{
+    font-size: x-large;
+    margin: 20px 0px;
+}
+.footercontent{
+    display: flex;
+    justify-content: space-around;
+    height: 40vh;
+    background-color: rgb(24, 24, 76);
+    /* padding-left: 20px; */
+    padding-top: 20px;
+
+}
+.footercontainer{
+    display: flex;
+    gap: 70px;
+}
+.footerbox{
+    color: aliceblue;
+
+}
+
+/* social media icon */
+.mediailogosectn{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.medilogoapp{
+    color: aliceblue;
+    font-size: larger;
+}
+.socialicon{
+    display: flex;
+    gap: 10px;
+}
+.socialiconsize{
+    height: 25px;
+    
+}
