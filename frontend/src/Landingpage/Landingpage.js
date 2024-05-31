@@ -14,17 +14,19 @@ import arvrmodel from '../Assets/arvrmodel.jpg'
 import facebook from '../Assets/facebook.png'
 import instagram from '../Assets/instagram.png'
 import twiter from '../Assets/twiter.png'
+import { Link } from 'react-router-dom'
 // import facebook from '../Assets/linkedin.png'
 
 
 const Landingpage = () => {
+  
   return (
     <>
       <div className={landingpage.main_header}>
         <div className={landingpage.main_logo}><span>Mediconnect AI</span></div>
         <div className={landingpage.btm_lgsg}>
-          <button>Log in</button>
-          <button>Sign in</button>
+          <Link to='/user/login_signup' state={"login"} className={landingpage.btm_lg} >Log in</Link>
+          <Link to='/user/login_signup' state={"signup"} className={landingpage.btm_lg}>Sign in</Link>
         </div>
       </div>
       <section className={landingpage.sectionone}>

@@ -1,12 +1,13 @@
 import './App.css';
-import Landingpage from './Landingpage/Landingpage';
-import Dashboard from './Pages/Patient/Dashboard/Dashboard';
+import Routers from './Router/Routers';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
     <>
-    <Landingpage/>
-    </>
+    <Toaster position="top-center" reverseOrder={false} />
+<Routers/>
+</>
   );
 }
 

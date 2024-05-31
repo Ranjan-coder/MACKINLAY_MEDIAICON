@@ -25,6 +25,18 @@ body{
     justify-content: center;
     gap: 10px;
 }
+.btm_lg{
+    height: 40px;
+    width: 90px;
+    border-radius: 25px;
+    border: none;
+    text-align: center;
+    padding-top: 10px;
+    color: aliceblue;
+    background-color: #110F67;
+    cursor: pointer;
+    text-decoration: none;
+}
 .main_logo{
     width: 200px;
     text-align: center;

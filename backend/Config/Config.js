@@ -1,7 +1,9 @@
 const mongoose = require("mongoose")
 const dotenv = require("dotenv")
 dotenv.config();
-const url = 'mongodb+srv://ranjanchanda06:Ranjan@12345@cluster0.efrsnaw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+// const url = 'mongodb+srv://ranjanchanda06:Ranjan@12345@cluster0.efrsnaw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+const url ="mongodb+srv://vasupandeyji98:pRwvgNZk4moFlpu0@cluster0.miivsay.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+
 mongoose.set('strictQuery',false);
 
 async function ConnectDb(){
