@@ -4,8 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import axios from 'axios';
 import { toast, Toaster } from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
+import { handleUserLogin } from '../../Redux/ReduxSlice';
+import { useDispatch } from 'react-redux';
 
 const Signup = () => {
+  const NavigatetTo =useNavigate()
+  const dispatchTo=useDispatch()
+
   const [formData, setFormData] = useState({
     usertype: 'patient',
     name: '',
@@ -39,10 +45,11 @@ const Signup = () => {
       const { name, email, token, usertype } = response.data;
 
       // Storing user data in localStorage
-      localStorage.setItem('name', name);
-      localStorage.setItem('email', email);
-      localStorage.setItem('token', token);
-      localStorage.setItem('usertype', usertype);
+      // localStorage.setItem('name', name);
+      // localStorage.setItem('email', email);
+      // localStorage.setItem('token', token);
+      // localStorage.setItem('usertype', usertype);
+      dispatchTo(handleUserLogin({ name, email, usertype,token}))
 
       toast.success(response.data.message);
       setFormData({
@@ -55,6 +62,12 @@ const Signup = () => {
         phone_number: '',
         showPassword: false,
       });
+      setTimeout(() => {
+        if(usertype){
+          NavigatetTo("/");
+        }
+      }, 1000);
+
 
     } catch (error) {
       toast.error(error.response?.data?.message || 'An error occurred');
@@ -70,7 +83,7 @@ const Signup = () => {
           <select name='usertype' value={formData.usertype} className={LoginStyle.Form__input} onChange={handleChange} required>
             <option value="">Select any option</option>
             <option value="doctor">I am a Doctor</option>
-            <option defaultValue="patient">I am a Patient</option>
+            <option value="patient">I am a Patient</option>
           </select>
         </div>
 
