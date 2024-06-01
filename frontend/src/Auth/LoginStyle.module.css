@@ -25,6 +25,11 @@ body, html, #root {
     background:  linear-gradient(to bottom, rgb(123, 193, 250) , rgb(218, 236, 252) );
 
   }
+  .back_btn{
+padding: 10px 0 0 10px;    
+color: black;
+cursor: pointer;
+  }
   .left_Signing_cont{
     width: 50%;
     height: 100%;
@@ -85,6 +90,7 @@ background:  linear-gradient(to bottom, rgb(123, 193, 250) , rgb(40, 101, 207) )
     background-color: white;
     height: 88%;
     border-radius: 20px;
+    border-top: 2px solid rgb(203, 203, 203);
     /* overflow: scroll; */
 
 }

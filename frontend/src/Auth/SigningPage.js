@@ -2,19 +2,29 @@ import React,{useState} from 'react'
 import LoginStyle from './LoginStyle.module.css'
 import Login from './Login/Login'
 import Signup from './Signup/Signup'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import docwithpatient from '../Assets/doctorwithpatient.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faArrowAltCircleLeft} from '@fortawesome/free-solid-svg-icons'
 
 
 const SigningPage = () => {
     const TF =useLocation().state
+    const NavigatetTo=useNavigate()
 
   const [Switch, setSwitch]=useState(TF)
+  const handleBack=()=>{
+NavigatetTo(-1)
+  }
   
   return (
     <div className={LoginStyle.appContainer}>
       <div className={LoginStyle.Signing_cont}>
         <div className={LoginStyle.left_Signing_cont}>
+<div className={LoginStyle.back_btn} onClick={handleBack}>
+<FontAwesomeIcon icon={faArrowAltCircleLeft} /><span style={{paddingLeft:10}}>Back</span>
+
+</div>
           <h2 className={LoginStyle.P}>MEDI AI CONNECT</h2>
           <img src={docwithpatient} alt="doc_logo"/>
         </div>
