@@ -1,11 +1,10 @@
 import React from 'react'
-import DashboardStyle from './Dashboard.module.css'
-import { handleUserLogOut } from '../../../Redux/ReduxSlice'
 import { useDispatch, useSelector } from 'react-redux'
 import axios from 'axios'
 import toast from 'react-hot-toast'
+import { handleUserLogOut } from '../../../Redux/ReduxSlice'
 
-const Dashboard = () => {
+const DrDashboard = () => {
   const dispatchTo =useDispatch()
   const{email,name}=useSelector((state)=>state.User.currentUser)
   console.log(email,name);
@@ -30,12 +29,12 @@ const Dashboard = () => {
   }
   return (
 <>
-<div className={DashboardStyle.backgroundcolour}>
-<h1>Welcome to the Patient Dashboard</h1>
+<div >
+<h1>Welcome to the Doctor Dashboard</h1>
     <button onClick={handleLogout}>Logout</button>
 
 </div>
 </>  )
 }
 
-export default Dashboard
+export default DrDashboard
